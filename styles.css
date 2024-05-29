@@ -1,0 +1,173 @@
+
+  @font-face {
+    font-family: 'creativo';
+    src: url(../fonts/creativo.woff2) format('woff2');
+  }
+
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: #f0f0f0;
+}
+
+#main-container {
+    width: calc(100% - 40px);
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 0;
+}
+
+#prompt-field {
+    width: 100%;
+    background-color: #333;
+    padding: 40px;
+    margin-bottom: 15px;
+    height: 200px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 5px;
+}
+
+#main {
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    margin-bottom: 20px;
+}
+
+#button-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 10px;
+    width: 100%;
+}
+
+button {
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    padding: 10px 20px;
+    font-size: 1em;
+    cursor: pointer;
+    border: none;
+    border-radius: 5px;
+    background-color: grey;
+    color: white;
+    width: 100%;
+}
+
+#prompt-display {
+    color: white;
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    overflow: hidden;
+    text-align: center;
+    line-height: 1.4;
+    font-size: 1.2em;
+    padding: 0.2em 0; 
+}
+
+@media screen and (max-width: 600px) {
+    #prompt-display {
+        font-size: 1em;
+    }
+    
+}
+
+#total-prompts {
+    font-weight: bold;
+}
+
+button:hover {
+    background-color: black;
+}
+
+.info {
+    width: 100%;
+    text-align: center;
+}
+
+hr {
+    width: 100%;
+    border: 1px solid #ccc;
+    margin-bottom: 1em;
+}
+
+.info hr {
+    width: 100%;
+    border: 1px solid #ccc;
+    margin: 0 auto;
+    
+}
+
+.info p {
+    padding: 10px;
+    font-size: 1em;
+    margin-bottom: 10px;
+}
+
+
+h1 {
+    font-family: 'creativo', sans-serif;
+    margin-top: 50px;
+    text-align: center;
+    font-size: 2.8em;
+}
+
+h2 {
+    margin: 2em;
+    font-size: 1em;
+    font-weight: normal;
+}
+
+h3 {
+    margin: 1em;
+    font-size: 1em;
+    font-weight: bold;
+}
+
+.contributor-link {
+    margin-top: -1.5em;
+    font-weight: bold;
+    color: rgb(73, 73, 73);/
+}
+
+.contributors-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(3, 1fr));
+    gap: 10px;
+    justify-content: center;
+    align-items: center;
+    
+}
+
+.contributor {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.google-form-link {
+    display: inline-block;
+    padding: 10px 20px;
+    font-size: 1em;
+    cursor: pointer;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    background-color: gray;
+    color: white;
+    text-decoration: none;
+    margin-bottom: 1em;
+}
+
+.google-form-link:hover {
+    background-color: black;
+}
+
