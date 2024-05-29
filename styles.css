@@ -70,8 +70,15 @@ button {
     overflow: hidden;
     text-align: center;
     line-height: 1.4;
-    font-size: 1.5em;
+    font-size: 1.2em;
     padding: 0.2em 0; 
+}
+
+@media screen and (max-width: 600px) {
+    #prompt-display {
+        font-size: 1em;
+    }
+    
 }
 
 #total-prompts {
