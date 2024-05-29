@@ -113,22 +113,6 @@ hr {
     margin-bottom: 10px;
 }
 
-div a {
-    display: inline-block;
-    padding: 10px 20px;
-    font-size: 1em;
-    cursor: pointer;
-    border: 1px solid #ccc;
-    border-radius: 5px;
-    background-color: gray;
-    color: white;
-    text-decoration: none;
-    margin-bottom: 1em;
-}
-
-div a:hover {
-    background-color: black;
-}
 
 h1 {
     font-family: 'creativo', sans-serif;
@@ -142,3 +126,48 @@ h2 {
     font-size: 1em;
     font-weight: normal;
 }
+
+h3 {
+    margin: 1em;
+    font-size: 1em;
+    font-weight: bold;
+}
+
+.contributor-link {
+    margin-top: -1.5em;
+    font-weight: bold;
+    color: rgb(73, 73, 73);/
+}
+
+.contributors-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(3, 1fr));
+    gap: 10px;
+    justify-content: center;
+    align-items: center;
+    
+}
+
+.contributor {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.google-form-link {
+    display: inline-block;
+    padding: 10px 20px;
+    font-size: 1em;
+    cursor: pointer;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    background-color: gray;
+    color: white;
+    text-decoration: none;
+    margin-bottom: 1em;
+}
+
+.google-form-link:hover {
+    background-color: black;
+}
+
